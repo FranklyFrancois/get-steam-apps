@@ -1,0 +1,28 @@
+{
+  "name": "getsteamapps",
+  "version": "1.0.0",
+  "description": "Get steam apps from steam library",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Francois Brosseau",
+  "license": "ISC",
+  "dependencies": {
+    "bluebird": "^3.4.6",
+    "mongoose": "^4.6.5",
+    "request": "^2.76.0",
+    "request-promise": "^4.1.1"
+  },
+  "devDependencies": {
+    "babel": "^6.5.2",
+    "babel-preset-es2015": "^6.18.0",
+    "gulp": "^3.9.1",
+    "gulp-babel": "^6.1.2"
+  },
+  "repository" :
+  { "type" : "git"
+  , "url" : "https://github.com/FranklyFrancois/get-steam-apps.git"
+  }
+}
+
