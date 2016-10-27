@@ -18,7 +18,7 @@ var steamAppsSchema = new _mongoose2.default.Schema({
     publisher: [String],
     genres: [{ id: String, description: String }],
     categories: [{ id: String, description: String }],
-    builds: [{ buildid: Number, description: String, timeupdated: Number, category: ['public', 'development', 'legacy'] }]
+    builds: [{ buildid: Number, description: String, timeupdated: Number, category: { type: String, enum: ['public', 'development', 'legacy'] } }]
 });
 
 exports.default = _mongoose2.default.model('steamApps', steamAppsSchema);
