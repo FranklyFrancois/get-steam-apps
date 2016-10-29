@@ -75,7 +75,7 @@ class GetSteamApps {
                                         resolve();
                                     });
                                 })
-                                //throttling requests 
+                                //temporary throttling function, so steam doesn't spit back garbage data after being hammered too hard, it works since reduce is sequential
                             }, this._throttle())
                         });
                     }, Promise.resolve());
@@ -84,8 +84,7 @@ class GetSteamApps {
         })
     }
 
-    //temporary throttling function, so steam doesn't spit back garbage data after being hammered too hard, it works since reduce is sequential
-
+   
 }
 
 export default GetSteamApps;
