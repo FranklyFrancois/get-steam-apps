@@ -116,16 +116,14 @@ var GetSteamApps = function () {
                                         resolve();
                                     });
                                 });
-                                //throttling requests 
+                                //temporary throttling function, so steam doesn't spit back garbage data after being hammered too hard, it works since reduce is sequential
                             }, _this2._throttle());
                         });
                     }, _bluebird2.default.resolve());
                 });
             });
         }
-
-        //temporary throttling function, so steam doesn't spit back garbage data after being hammered too hard, it works since reduce is sequential
-
+ 
     }]);
 
     return GetSteamApps;
